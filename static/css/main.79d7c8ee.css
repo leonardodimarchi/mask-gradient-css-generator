@@ -1,0 +1,2 @@
+*{margin:0;padding:0}body{align-items:center;background:radial-gradient(#d3d3d3,#fff);height:100vh;justify-content:center;width:100vw}body,main{display:flex}main{align-items:flex-start;gap:1rem;justify-content:space-between;padding-left:5rem}main section{display:flex;flex-direction:column}.box{background:#fff;border-radius:2rem;height:15rem;overflow-x:hidden;overflow-y:auto;padding:2rem;width:30rem}.box::-webkit-scrollbar{width:.2rem}.box::-webkit-scrollbar-thumb{background:#373737}
+/*# sourceMappingURL=main.79d7c8ee.css.map*/
