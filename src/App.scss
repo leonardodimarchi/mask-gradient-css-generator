@@ -1,0 +1,13 @@
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding-left: 5rem;
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+}
