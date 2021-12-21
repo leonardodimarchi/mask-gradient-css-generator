@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/mask-gradient-css-generator/static/css/main.79d7c8ee.css",
-    "main.js": "/mask-gradient-css-generator/static/js/main.5342652b.js",
+    "main.css": "/mask-gradient-css-generator/static/css/main.a5454319.css",
+    "main.js": "/mask-gradient-css-generator/static/js/main.ccf8f5a9.js",
     "static/js/787.197f6490.chunk.js": "/mask-gradient-css-generator/static/js/787.197f6490.chunk.js",
+    "static/media/Montserrat-BlackItalic.ttf": "/mask-gradient-css-generator/static/media/Montserrat-BlackItalic.4404f7c61ef37bcfd52a.ttf",
+    "static/media/Montserrat-Regular.ttf": "/mask-gradient-css-generator/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Montserrat-Bold.ttf": "/mask-gradient-css-generator/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
+    "static/media/Montserrat-Light.ttf": "/mask-gradient-css-generator/static/media/Montserrat-Light.02afb26fe72fcc052988.ttf",
     "index.html": "/mask-gradient-css-generator/index.html",
-    "main.79d7c8ee.css.map": "/mask-gradient-css-generator/static/css/main.79d7c8ee.css.map",
-    "main.5342652b.js.map": "/mask-gradient-css-generator/static/js/main.5342652b.js.map",
+    "static/media/copy-outline.svg": "/mask-gradient-css-generator/static/media/copy-outline.8b6fddddecc3238e905d9ae540cdd617.svg",
+    "main.a5454319.css.map": "/mask-gradient-css-generator/static/css/main.a5454319.css.map",
+    "main.ccf8f5a9.js.map": "/mask-gradient-css-generator/static/js/main.ccf8f5a9.js.map",
     "787.197f6490.chunk.js.map": "/mask-gradient-css-generator/static/js/787.197f6490.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79d7c8ee.css",
-    "static/js/main.5342652b.js"
+    "static/css/main.a5454319.css",
+    "static/js/main.ccf8f5a9.js"
   ]
 }
