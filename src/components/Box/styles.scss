@@ -1,8 +1,9 @@
 .box {
-  width: 30rem;
-  height: 15rem;
+  height: 10rem;
 
-  padding: 2rem;
+  padding: 2rem {
+    bottom: 5rem;
+  };
 
   overflow-y: auto;
   overflow-x: hidden;

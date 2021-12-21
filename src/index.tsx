@@ -3,9 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ToastContainer } from 'react-toastify';
 
 ReactDOM.render(
   <React.StrictMode>
+    <ToastContainer
+      position="bottom-center"
+      autoClose={2000}
+      hideProgressBar={true}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+    />
     <App />
   </React.StrictMode>,
   document.getElementById('root')

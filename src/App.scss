@@ -1,13 +1,55 @@
-main {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
+main {  
+  h1 {
+    margin-bottom: 8rem;
 
-  padding-left: 5rem;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 3.5rem;
+
+    text-align: center;
+
+    filter: drop-shadow(-2px 4px 0px gray);
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 100%);
+  }
 
   section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 50%;
+    margin: auto;
+
+    gap: 1rem;
+  
+    article {
+      display: flex;
+      flex-direction: column;
+  
+      .copy-area {
+        border: 1px solid var(--color-gray);
+        border-radius: 10px;
+
+        padding: 0.3rem;
+  
+        p {
+          font-size: 0.8rem;
+          font-weight: 300;
+        }
+
+        img {
+          display: block;
+          width: 1.7rem;
+          height: 1.8rem;
+
+          margin-left: auto;
+
+          transition: 0.3s ease;
+          cursor: pointer;
+        
+          &:hover {
+            filter: brightness(0.6);
+          }
+        }
+      }
+    }
   }
 }

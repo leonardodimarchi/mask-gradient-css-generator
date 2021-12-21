@@ -1,4 +1,7 @@
+@import 'react-toastify/dist/ReactToastify.css';
+
 * {
+  font-family: "Montserrat", "Times New Roman";
   margin: 0;
   padding: 0;
 }
@@ -6,9 +9,41 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+
+  margin-top: 5rem;
 
   width: 100vw;
   height: 100vh;
+
+  overflow: hidden;
   background: radial-gradient(lightgray, white);
+}
+
+:root {
+  --color-gray: #bababa;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat/Montserrat-BlackItalic.ttf") format("truetype");
+  font-weight: bolder;
+  font-style: italic;
 }
