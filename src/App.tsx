@@ -57,30 +57,39 @@ export default function App(): ReactElement {
 
         <article>
           <div className="buttons">
-            <button onClick={() => {
-              setSelectedMask(MaskTypeEnum.LINEAR);
-            }}>
+            <button 
+              className={ selectedMask === MaskTypeEnum.LINEAR ? 'selected-button' : '' } 
+              onClick={() => {
+                setSelectedMask(MaskTypeEnum.LINEAR);
+              }}
+            >
               Linear
             </button>
 
-            <button onClick={() => {
-              setSelectedMask(MaskTypeEnum.RADIAL);
-            }}>
+            <button 
+              className={ selectedMask === MaskTypeEnum.RADIAL ? 'selected-button' : '' } 
+              onClick={() => {
+                setSelectedMask(MaskTypeEnum.RADIAL);
+              }}
+            >
               Radial
             </button>
 
-            <button onClick={() => {
-              setSelectedMask(MaskTypeEnum.LINEAR_DOUBLE);
-            }}>
+            <button 
+              className={ selectedMask === MaskTypeEnum.LINEAR_DOUBLE ? 'selected-button' : '' } 
+              onClick={() => {
+                setSelectedMask(MaskTypeEnum.LINEAR_DOUBLE);
+              }}
+            >
               Linear both sides
             </button>
           </div>
 
           {
             selectedMask !== MaskTypeEnum.RADIAL && 
-            <>
+            <div className="input">
               <label htmlFor="degree">
-                Degree: { selectedMask === MaskTypeEnum.LINEAR ? maskLinear.degree : maskLinearDouble.degree }
+                Degree: <b>{ selectedMask === MaskTypeEnum.LINEAR ? maskLinear.degree : maskLinearDouble.degree }º</b>
               </label>
 
               <input 
@@ -105,27 +114,29 @@ export default function App(): ReactElement {
               }}>
                 180º
               </button>
-            </>
+            </div>
           }
 
-          <label htmlFor="percentage">
-            Percentage: { getPropByMaskType('percentage') }
-          </label>
+          <div className="input">
+            <label htmlFor="percentage">
+              Percentage: <b>{ getPropByMaskType('percentage') }%</b>
+            </label>
 
-          <input 
-            name="percentage" 
-            step={1} 
-            max={100} 
-            type="range" 
-            value={ getPropByMaskType('percentage') }
-            onChange={e => setPropByMaskType('percentage', +e.target.value)}
-          />
-
+            <input 
+              name="percentage" 
+              step={1} 
+              max={100} 
+              type="range" 
+              value={ getPropByMaskType('percentage') }
+              onChange={e => setPropByMaskType('percentage', +e.target.value)}
+            />
+          </div>
+        
           { 
             selectedMask !== MaskTypeEnum.LINEAR &&
-            <>
+            <div className="input">
               <label htmlFor="second-percentage">
-                Second percentage: { selectedMask === MaskTypeEnum.RADIAL ? maskRadial.secondPercentage : maskLinearDouble.secondPercentage }
+                Second percentage: <b>{ selectedMask === MaskTypeEnum.RADIAL ? maskRadial.secondPercentage : maskLinearDouble.secondPercentage }%</b>
               </label>
 
               <input 
@@ -144,7 +155,7 @@ export default function App(): ReactElement {
                       setMaskLinearDouble({ ...maskLinearDouble, secondPercentage: +e.target.value });
                 }}
               />
-            </>
+            </div>
           }
         </article>
       </section>

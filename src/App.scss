@@ -28,6 +28,7 @@ main {
         border: 1px solid var(--color-gray);
         border-radius: 10px;
 
+        margin-top: 0.5rem;
         padding: 0.3rem;
   
         p {
@@ -48,6 +49,62 @@ main {
           &:hover {
             filter: brightness(0.6);
           }
+        }
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-bottom: 1rem;
+
+        button {
+          all: unset;
+          flex-grow: 1;
+
+          min-width: 25%;
+
+          padding: 0.5rem;
+          
+          border-radius: 8px;
+          border: 1px solid var(--color-gray);
+
+          text-align: center;
+          
+          cursor: pointer;
+          background: white;
+
+          &:hover {
+            filter: brightness(1.2);
+          }
+        }
+
+        .selected-button {
+          filter: brightness(0.9);
+
+          &:hover {
+            filter: brightness(0.92);
+          }
+        }
+      }
+
+      .input {
+        margin-bottom: 0.6rem;
+
+        label {
+          display: flex;
+
+          b {
+            margin-left: auto;
+          }
+        }
+
+        input {
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
         }
       }
     }
