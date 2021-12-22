@@ -51,7 +51,7 @@ export default function App(): ReactElement {
               { 'mask-image: ' + returnCurrentCSSMask() + ';' }
             </p>
 
-            <img src={ copyIcon } alt='Copiar' onClick={ copyMaskToClipBoard } />
+            <img src={ copyIcon } alt='Copy css mask code' onClick={ copyMaskToClipBoard } />
           </div>
         </article>
 
