@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.556b70d0.css",
-    "main.js": "/static/js/main.f7d0a636.js",
+    "main.css": "/static/css/main.11461e70.css",
+    "main.js": "/static/js/main.4363e078.js",
     "static/js/787.197f6490.chunk.js": "/static/js/787.197f6490.chunk.js",
+    "static/media/use-case-scroll.gif": "/static/media/use-case-scroll.1f3c94b608136eee6d36.gif",
     "static/media/Montserrat-BlackItalic.ttf": "/static/media/Montserrat-BlackItalic.4404f7c61ef37bcfd52a.ttf",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
     "static/media/Montserrat-Light.ttf": "/static/media/Montserrat-Light.02afb26fe72fcc052988.ttf",
+    "static/media/use-case-03.jpg": "/static/media/use-case-03.920c06a24894695abed4.jpg",
+    "static/media/use-case-01.jpg": "/static/media/use-case-01.57cf037cc36596960abf.jpg",
+    "static/media/use-case-02.jpg": "/static/media/use-case-02.c21b3ab87944c35571db.jpg",
     "index.html": "/index.html",
     "static/media/copy-outline.svg": "/static/media/copy-outline.8b6fddddecc3238e905d9ae540cdd617.svg",
-    "main.556b70d0.css.map": "/static/css/main.556b70d0.css.map",
-    "main.f7d0a636.js.map": "/static/js/main.f7d0a636.js.map",
+    "main.11461e70.css.map": "/static/css/main.11461e70.css.map",
+    "main.4363e078.js.map": "/static/js/main.4363e078.js.map",
     "787.197f6490.chunk.js.map": "/static/js/787.197f6490.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.556b70d0.css",
-    "static/js/main.f7d0a636.js"
+    "static/css/main.11461e70.css",
+    "static/js/main.4363e078.js"
   ]
 }
