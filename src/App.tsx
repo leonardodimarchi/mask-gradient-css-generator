@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { ReactElement, useEffect } from 'react';
 
 import './App.scss';
 import useCaseScroll from './assets/gifs/use-case-scroll.gif';
@@ -9,12 +9,25 @@ import useCase03 from './assets/imgs/use-case-03.jpg';
 import useCase04 from './assets/imgs/use-case-04.jpg';
 import { MainContainer } from './components/MainContainer';
 
+declare var adsbygoogle: any;
+
 export default function App(): ReactElement {
+  useEffect(() => {
+    (adsbygoogle = (window as any).adsbygoogle || []).push({});
+  }, [])
+
   return (
     <main>
       <section>
         <h1>CSS Mask Generator</h1>
         <MainContainer/>
+        <ins className="adsbygoogle"
+            style={ { display: 'block' } }
+            data-ad-client="ca-pub-7432613021226927"
+            data-ad-slot="1679379806"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+        />
       </section>
 
       <section>
@@ -24,18 +37,18 @@ export default function App(): ReactElement {
             A Fade effect in css can be achieved from a div layer above the container, by playing with a the opacity of
             gradient from a solid color. However, using a css mask, it is possible to achieve the same result without
             relying on a solid color or extra work in the HTML of the page, leaving this responsibility to the mask.
-
-            <ul>
-              <li>
-                You may also need to set the same property with webkit as well.
-                eg: <strong>-webkit-mask-image: { '<value>' }</strong>;
-              </li>
-              <li>
-                To check browser compatibility, check it out at the caniuse website:
-                <a href="https://caniuse.com/?search=mask-image"> https://caniuse.com/?search=mask-image</a>.
-              </li>
-            </ul>
           </p>
+          
+          <ul>
+            <li>
+              You may also need to set the same property with webkit as well.
+              eg: <strong>-webkit-mask-image: { '<value>' }</strong>;
+            </li>
+            <li>
+              To check browser compatibility, check it out at the caniuse website:
+              <a href="https://caniuse.com/?search=mask-image"> https://caniuse.com/?search=mask-image</a>.
+            </li>
+          </ul>
 
           <img loading="lazy" src={ useCase01 } alt="First CSS mask fade use case: Fading a overflowed text"/>
         </article>
@@ -106,7 +119,16 @@ export default function App(): ReactElement {
             </li>
           </ul>
         </article>
+
       </section>
+
+      <ins className="adsbygoogle"
+        style={ { display: 'block' } }
+        data-ad-client="ca-pub-7432613021226927"
+        data-ad-slot="7729265914"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
     </main>
   );
 }

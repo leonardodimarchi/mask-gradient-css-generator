@@ -4,7 +4,9 @@
   gap: 1rem;
 
   width: 50%;
-  margin: auto;
+  margin: auto {
+    bottom: 2rem;
+  };
 
   @media(max-width: 1024px) {
     width: 70%;
