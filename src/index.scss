@@ -1,14 +1,15 @@
-@import 'react-toastify/dist/ReactToastify.css';
+@import '~react-toastify/dist/ReactToastify.css';
 
 * {
-  font-family: "Montserrat", "Times New Roman";
-  margin: 0;
-  padding: 0;
+  font-family: "Montserrat", "Times New Roman", serif;
 }
 
 body {
   display: flex;
   justify-content: center;
+
+  margin: 0;
+  padding: 0;
 
   overflow: hidden;
   background: radial-gradient(lightgray, white);
