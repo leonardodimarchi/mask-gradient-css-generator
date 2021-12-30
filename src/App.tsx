@@ -9,11 +9,9 @@ import useCase03 from './assets/imgs/use-case-03.jpg';
 import useCase04 from './assets/imgs/use-case-04.jpg';
 import { MainContainer } from './components/MainContainer';
 
-declare var adsbygoogle: any;
-
 export default function App(): ReactElement {
   useEffect(() => {
-    (adsbygoogle = (window as any).adsbygoogle || []).push({});
+      (window as any).adsbygoogle?.push({});
   }, [])
 
   return (
