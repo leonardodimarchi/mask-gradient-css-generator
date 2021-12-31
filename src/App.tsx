@@ -44,7 +44,7 @@ export default function App(): ReactElement {
             </li>
             <li>
               To check browser compatibility, check it out at the caniuse website:
-              <a href="https://caniuse.com/?search=mask-image"> https://caniuse.com/?search=mask-image</a>.
+              <a href="https://caniuse.com/?search=mask-image" target="_blank" rel="dofollow noreferrer"> https://caniuse.com/?search=mask-image</a>.
             </li>
           </ul>
 
